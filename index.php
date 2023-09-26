@@ -1,4 +1,10 @@
 <?php 
+$uri = explode('/',$uri);
+if($uri[2] != 'get'){
+    include 'header.php';
+}
+?>
+<?php 
 
 $uri = $_SERVER['REQUEST_URI'];
 route($uri);
@@ -21,12 +27,5 @@ function route($uri){
 
 function show($uri){
     include 'routes/'.$uri.'.php';
-}
-?>
-
-<?php 
-$uri = explode('/',$uri);
-if($uri[2] != 'get'){
-    include 'header.php';
 }
 ?>
