@@ -4,7 +4,7 @@ Not actually websockets... websockets in php are way too complicated.. :D.
 
 
 
-how to use:
+### how to use:
 
 - create a route folder with all your routes.
 - in the route folder create a get folder for your get requests
@@ -16,3 +16,12 @@ So if I want to get the number value I for table1 in my database, I would do
 
 - in the page you want use this function: create_value_websocket(table_name,column,id)
 This will generate a span element and javascript code that will automatically update the value from number.php
+
+
+### run the test
+
+- put the files in your htdocs and create a database
+- name: websocketer
+- table: test_table
+- and create 2 columns, id and number
+- insert 2 values with a random number and auto incrementing id
